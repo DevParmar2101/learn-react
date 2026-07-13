@@ -17,7 +17,6 @@ function App() {
           <ProfileCard
               name="Dev Parmar"
               position="Full Stack Developer"
-              city="Ahmedabad"
           />
 
           <ProfileCard

@@ -12,13 +12,13 @@ function ProfileCard() {
 }
 */
 
-function ProfileCard(props) {
+function ProfileCard({name, position, city}) {
     return (
         <div>
             <h2 style={{ marginBottom: "15px" }}> Profile Details</h2>
-            <p>Name: {props.name}</p>
-            <p>Position: {props.position}</p>
-            <p>City: {props.city}</p>
+            <p>Name: {name}</p>
+            <p>Position: {position}</p>
+            <p>City: {city}</p>
         </div>
     );
 }
