@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import ProfileCard from "./components/ProfileCard.jsx";
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
   return (
