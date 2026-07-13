@@ -1,7 +1,8 @@
+import Header from './components/Header';
 function App() {
   return (
       <div>
-        <h1>React Learning</h1>
+        <Header />
         <p>Welcome Dev</p>
       </div>
   );
