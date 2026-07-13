@@ -11,7 +11,7 @@ function ProfileCard() {
     )
 }
 */
-
+// Version 2
 function ProfileCard({name, position, city}) {
     return (
         <div>
