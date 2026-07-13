@@ -1,18 +1,20 @@
 function UserInfo()
 {
-    const firstName = 'Dev';
-    const lastName = 'Parmar';
-    const age = 25;
-    const phone = '0123456789';
-    const city = 'Ahmedabad';
+    const user = {
+        firstName: 'Dev',
+        lastName: 'Parmar',
+        age: '25',
+        phone: '0123456789',
+        city: 'Ahmedabad'
+    };
 
     return (
         <div>
             <h1>User Info</h1>
-            <p>Name: {firstName} {lastName}</p>
-            <p>Age: {age}</p>
-            <p>Phone: {phone}</p>
-            <p>City: {city}</p>
+            <p>Name: {user.firstName} {user.lastName}</p>
+            <p>Age: {user.age}</p>
+            <p>Phone: {user.phone}</p>
+            <p>City: {user.city}</p>
         </div>
     );
 
