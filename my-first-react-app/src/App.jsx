@@ -8,9 +8,29 @@ function App() {
         <Header />
         <p>Welcome Dev</p>
 
-          <div style={{ marginTop: '25px' }}>
+{/*
+          Version 1
+          {/*<div style={{ marginTop: '25px' }}>
               <ProfileCard />
           </div>
+*/}
+          <ProfileCard
+              name="Dev Parmar"
+              position="Full Stack Developer"
+              city="Ahmedabad"
+          />
+
+          <ProfileCard
+              name="Rahul Sharma"
+              position="Frontend Developer"
+              city="Mumbai"
+          />
+
+          <ProfileCard
+              name="Ritvik Pandya"
+              position="Trainee"
+              city="Bhopal"
+          />
 
           <div style={{ marginTop: '25px' }}>
               <UserInfo />
