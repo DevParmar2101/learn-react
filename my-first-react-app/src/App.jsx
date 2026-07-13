@@ -6,8 +6,10 @@ function App() {
       <div>
         <Header />
         <p>Welcome Dev</p>
-          <br/>
-          <ProfileCard />
+
+          <div style={{ marginTop: '25px' }}>
+              <ProfileCard />
+          </div>
       </div>
   );
 }

@@ -1,10 +1,10 @@
 function ProfileCard() {
     return (
         <div>
-            <h2>Profile Details</h2>
-            <span>Name: Dev parmar</span><br/>
-            <span>Position: Full stack developer</span><br/>
-            <span>Location: Ahmedabad</span>
+            <h2 style={{ marginBottom: '20px'}}>Profile Details</h2>
+            <p>Name: Dev parmar</p>
+            <p>Position: Full stack developer</p>
+            <p>Location: Ahmedabad</p>
         </div>
     )
 }
