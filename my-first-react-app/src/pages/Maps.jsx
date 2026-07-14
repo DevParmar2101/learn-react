@@ -1,9 +1,14 @@
+import FruitListByMap from "../components/FruitListByMap.jsx";
+
 function Map() {
     return (
         <div>
-            <h1>Map Lesson</h1>
-
+            <h2>Map Lesson</h2>
             <p>This page is for learning map().</p>
+
+            <div style={{ marginTop: "25px" }}>
+                <FruitListByMap />
+            </div>
         </div>
     );
 }
