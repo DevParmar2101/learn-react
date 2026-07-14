@@ -55,7 +55,14 @@ function App() {
               city="Bhopal"
           />
 */}
-
+          {employees.map((employee) => (
+              <ProfileCard
+                  key={employee.id}
+                  name={employee.name}
+                  position={employee.position}
+                  city={employee.city}
+              />
+          ))}
           <div style={{ marginTop: '25px' }}>
               <UserInfo />
           </div>
