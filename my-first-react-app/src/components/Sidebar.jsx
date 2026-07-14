@@ -20,7 +20,7 @@ function Sidebar() {
                     <Link to="/map">Maps</Link>
                 </li>
                 <li>
-                    <Link to="/counter">Counters</Link>
+                    <Link to="/use-state">UseState</Link>
                 </li>
             </ul>
         </aside>

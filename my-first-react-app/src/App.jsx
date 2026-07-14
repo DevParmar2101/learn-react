@@ -2,9 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Components from "./pages/Components";
 import Props from "./pages/Props";
-import Counter from "./pages/Counter";
+import UseState from "./pages/UseState";
 import Maps from "./pages/Maps";
-import {Component} from "react";
 import Layout from "./components/Layout";
 
 // import Header from './components/Header';
@@ -91,7 +90,7 @@ function App() {
                     <Route path="/components" element={ <Components /> } />
                     <Route path="/props" element={ <Props /> } />
                     <Route path="/map" element={ <Maps /> } />
-                    <Route path="/counter" element={ <Counter /> } />
+                    <Route path="/use-state" element={ <UseState /> } />
                 </Routes>
             </Layout>
         </div>
