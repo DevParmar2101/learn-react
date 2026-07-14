@@ -304,6 +304,10 @@ Start Developing
 
 ---
 
+# Commands to run
+```bash
+npm install react-router-dom
+```
 # Author
 
 **Dev Parmar**# learn-react
