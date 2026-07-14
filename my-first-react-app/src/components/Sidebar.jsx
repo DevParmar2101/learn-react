@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
-import "./Navbar.css";
+import { Link } from "react-router-dom";
+import "../styles/sidebar.css";
 
-function Navbar() {
+function Sidebar() {
     return (
-        <nav className="navbar">
-            <h1>React Learning</h1>
+        <aside className="sidebar">
+            <h2>React Learning</h2>
+
             <ul>
                 <li>
                     <Link to="/">Home</Link>
@@ -22,8 +23,8 @@ function Navbar() {
                     <Link to="/counter">Counters</Link>
                 </li>
             </ul>
-        </nav>
-    )
+        </aside>
+    );
 }
 
-export default Navbar;
+export default Sidebar;

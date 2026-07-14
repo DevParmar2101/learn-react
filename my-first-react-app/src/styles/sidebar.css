@@ -1,0 +1,53 @@
+.sidebar{
+
+    width:260px;
+
+    background:#20232a;
+
+    color:white;
+
+    padding:25px;
+
+}
+
+.sidebar h2{
+
+    margin-bottom:30px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:15px;
+
+}
+
+.sidebar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    display:block;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:#61dafb;
+
+    color:#20232a;
+
+}

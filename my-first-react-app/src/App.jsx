@@ -5,8 +5,8 @@ import Props from "./pages/Props";
 import Counter from "./pages/Counter";
 import Maps from "./pages/Maps";
 import {Component} from "react";
+import Layout from "./components/Layout";
 
-import Navbar from "./components/Navbar";
 // import Header from './components/Header';
 // import ProfileCard from "./components/ProfileCard";
 // import UserInfo from "./components/UserInfo";
@@ -85,15 +85,15 @@ function App() {
     // );
     return (
         <div>
-            <Navbar />
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/components" element={ <Components /> } />
-                <Route path="/props" element={ <Props /> } />
-                <Route path="/map" element={ <Maps /> } />
-                <Route path="/counter" element={ <Counter /> } />
-            </Routes>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/components" element={ <Components /> } />
+                    <Route path="/props" element={ <Props /> } />
+                    <Route path="/map" element={ <Maps /> } />
+                    <Route path="/counter" element={ <Counter /> } />
+                </Routes>
+            </Layout>
         </div>
     );
 }
