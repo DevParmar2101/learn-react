@@ -12,15 +12,22 @@ function UseState() {
             <h2>Counter Example</h2>
             <p>Current Count: {count}</p>
 
-            <button onClick={() => setCount(count + 1)}>
+            <button style={{ marginBottom: "10px", marginTop: "10px" }} onClick={() => setCount(count + 1)}>
                 Click Here
             </button>
             <hr/>
-            <h2>Exercise 2</h2>
-            <UseStateEx2 />
+
+            <h2>Exercise 2(Increment & Decrement the count and resetButton, also stop the count to go below 0.)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateEx2 />
+            </div>
             <hr/>
-            <h2>Exercise 3</h2>
-            <UseStateEx3 />
+
+            <h2>Exercise 3 (Change Name like fron 1 to 2 and then fron 2 to 1 it is switching using useState in string)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateEx3 />
+            </div>
+
         </div>
     );
 }
