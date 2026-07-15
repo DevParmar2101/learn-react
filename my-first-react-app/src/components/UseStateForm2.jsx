@@ -1,5 +1,4 @@
 import {useState} from "react";
-import UseStateFormPage from "../pages/UseStateFormPage.jsx";
 
 function UseStateForm2()
 {
@@ -9,8 +8,11 @@ function UseStateForm2()
     return (
         <div>
             <label htmlFor="name">Name</label>
+            <br/>
             <input type="text" id="name" value={name} onChange={(event) => setName(event.target.value)} />
+            <br/>
             <label htmlFor="email">Email</label>
+            <br/>
             <input type="email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
 
             <div style={{ marginTop: "10px" }}>
