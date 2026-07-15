@@ -2,6 +2,7 @@ import { useState } from "react";
 import UseStateEx2 from "../components/UseStateEx2";
 import UseStateEx3 from "../components/UseStateEx3";
 import UseStateEx4 from "../components/UseStateEx4";
+import UseStateEx5 from "../components/UseStateEx5";
 
 function UseState() {
     const [count, setCount] = useState(0);
@@ -28,10 +29,17 @@ function UseState() {
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateEx3 />
             </div>
+            <hr/>
 
             <h2>Exercise 4 (Toggle action like hide/show by using useState in boolean form)</h2>
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateEx4 />
+            </div>
+            <hr/>
+
+            <h2>Exercise 5 (Change one key fron the object and without change others.)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateEx5 />
             </div>
 
         </div>
