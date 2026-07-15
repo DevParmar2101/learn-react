@@ -8,9 +8,9 @@ function UseStateForm2()
 
     return (
         <div>
-            <label>Name</label>
+            <label htmlFor="name">Name</label>
             <input type="text" id="name" value={name} onChange={(event) => setName(event.target.value)} />
-            <label>Email</label>
+            <label htmlFor="email">Email</label>
             <input type="email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
 
             <div style={{ marginTop: "10px" }}>

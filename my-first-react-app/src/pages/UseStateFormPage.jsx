@@ -12,7 +12,7 @@ function UseStateFormPage() {
             </div>
             <hr/>
 
-            <h2>Exercise 2(Increment & Decrement the count and resetButton, also stop the count to go below 0.)</h2>
+            <h2>Exercise 2(Multiple Inputs)</h2>
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateForm2 />
             </div>
