@@ -1,6 +1,7 @@
 import { useState } from "react";
 import UseStateEx2 from "../components/UseStateEx2";
 import UseStateEx3 from "../components/UseStateEx3";
+import UseStateEx4 from "../components/UseStateEx4";
 
 function UseState() {
     const [count, setCount] = useState(0);
@@ -26,6 +27,11 @@ function UseState() {
             <h2>Exercise 3 (Change Name like fron 1 to 2 and then fron 2 to 1 it is switching using useState in string)</h2>
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateEx3 />
+            </div>
+
+            <h2>Exercise 4 (Toggle action like hide/show by using useState in boolean form)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateEx4 />
             </div>
 
         </div>
