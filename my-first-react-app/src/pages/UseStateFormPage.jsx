@@ -1,5 +1,6 @@
 import UseStateForm1 from "../components/UseStateForm1";
 import UseStateForm2 from "../components/UseStateForm2";
+import UseStateForm3 from "../components/UseStateForm3";
 
 function UseStateFormPage() {
     return (
@@ -15,6 +16,12 @@ function UseStateFormPage() {
             <h2>Exercise 2(Multiple Inputs)</h2>
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateForm2 />
+            </div>
+            <hr/>
+
+            <h2>Exercise 3(Multiple Inputs will handle by one state object.)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateForm3 />
             </div>
             <hr/>
         </div>
