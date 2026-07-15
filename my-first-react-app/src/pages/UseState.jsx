@@ -3,7 +3,7 @@ import UseStateEx2 from "../components/UseStateEx2";
 import UseStateEx3 from "../components/UseStateEx3";
 import UseStateEx4 from "../components/UseStateEx4";
 import UseStateEx5 from "../components/UseStateEx5";
-
+import UseStateEx6 from "../components/UseStateEx6";
 function UseState() {
     const [count, setCount] = useState(0);
 
@@ -41,6 +41,13 @@ function UseState() {
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseStateEx5 />
             </div>
+            <hr/>
+
+            <h2>Exercise 6 (Add new value in an array using useState as array.)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateEx6 />
+            </div>
+            <hr/>
 
         </div>
     );
