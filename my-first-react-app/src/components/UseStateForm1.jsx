@@ -6,8 +6,7 @@ function UseStateForm1() {
     return (
         <div>
             <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
-
-            <p style={{ marginTop: "5px"}}>Hello, {name}</p>
+            {name && <p style={{ marginTop: "5px"}}>Hello, {name}</p>}
         </div>
     );
 }
