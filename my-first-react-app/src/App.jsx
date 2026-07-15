@@ -5,7 +5,7 @@ import Props from "./pages/Props";
 import UseState from "./pages/UseState";
 import Maps from "./pages/Maps";
 import Layout from "./components/Layout";
-
+import UseStateForm1 from "./components/UseStateForm1";
 function App() {
     return (
         <div>
@@ -16,6 +16,7 @@ function App() {
                     <Route path="/props" element={ <Props /> } />
                     <Route path="/map" element={ <Maps /> } />
                     <Route path="/use-state" element={ <UseState /> } />
+                    <Route path="/use-state-form" element={ <UseStateForm1 /> } />
                 </Routes>
             </Layout>
         </div>
