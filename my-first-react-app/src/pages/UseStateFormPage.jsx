@@ -2,6 +2,7 @@ import UseStateForm1 from "../components/UseStateForm1";
 import UseStateForm2 from "../components/UseStateForm2";
 import UseStateForm3 from "../components/UseStateForm3";
 import UseStateForm4 from "../components/UseStateForm4";
+import UseStateForm5 from "../components/UseStateForm5";
 
 function UseStateFormPage() {
     return (
@@ -31,6 +32,13 @@ function UseStateFormPage() {
                 <UseStateForm4 />
             </div>
             <hr/>
+
+            <h2>Exercise 5(We have added error validation in this exercise on submit.)</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseStateForm5 />
+            </div>
+            <hr/>
+
         </div>
     );
 }
