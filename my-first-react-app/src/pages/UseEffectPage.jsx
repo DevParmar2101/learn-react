@@ -1,9 +1,9 @@
 import {useEffect} from "react";
-import UseEffectEx1 from '../components/UseEffect/UseEffectEx1.jsx';
-import UseEffectEx2 from '../components/UseEffect/UseEffectEx2.jsx';
-import UseEffectEx3 from '../components/UseEffect/UseEffectEx3.jsx';
-import UseEffectEx4 from '../components/UseEffect/UseEffectEx4.jsx';
-import UseEffectEx5 from '../components/UseEffect/UseEffectEx5.jsx';
+import UseEffectEx1 from '../components/UseEffect/UseEffectEx1';
+import UseEffectEx2 from '../components/UseEffect/UseEffectEx2';
+import UseEffectEx3 from '../components/UseEffect/UseEffectEx3';
+import UseEffectEx4 from '../components/UseEffect/UseEffectEx4';
+import UseEffectEx5 from '../components/UseEffect/UseEffectEx5';
 
 function UseEffectPage() {
     useEffect(() => {

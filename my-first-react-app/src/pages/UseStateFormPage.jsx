@@ -1,8 +1,8 @@
-import UseStateForm1 from "../components/UseStateForm/UseStateForm1.jsx";
-import UseStateForm2 from "../components/UseStateForm/UseStateForm2.jsx";
-import UseStateForm3 from "../components/UseStateForm/UseStateForm3.jsx";
-import UseStateForm4 from "../components/UseStateForm/UseStateForm4.jsx";
-import UseStateForm5 from "../components/UseStateForm/UseStateForm5.jsx";
+import UseStateForm1 from "../components/UseStateForm/UseStateForm1";
+import UseStateForm2 from "../components/UseStateForm/UseStateForm2";
+import UseStateForm3 from "../components/UseStateForm/UseStateForm3";
+import UseStateForm4 from "../components/UseStateForm/UseStateForm4";
+import UseStateForm5 from "../components/UseStateForm/UseStateForm5";
 
 function UseStateFormPage() {
     return (

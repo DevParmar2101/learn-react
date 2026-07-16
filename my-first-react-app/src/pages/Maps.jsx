@@ -1,4 +1,4 @@
-import FruitListByMap from "../components/FruitListByMap.jsx";
+import FruitListByMap from "../components/FruitListByMap";
 
 function Map() {
     return (

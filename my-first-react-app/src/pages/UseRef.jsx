@@ -1,4 +1,4 @@
-import UseRefEx1 from "../components/UseRef/UseRefEx1.jsx";
+import UseRefEx1 from "../components/UseRef/UseRefEx1";
 
 function UseRef() {
     return (
