@@ -1,9 +1,9 @@
 import { useState } from "react";
-import UseStateEx2 from "../components/UseStateEx2";
-import UseStateEx3 from "../components/UseStateEx3";
-import UseStateEx4 from "../components/UseStateEx4";
-import UseStateEx5 from "../components/UseStateEx5";
-import UseStateEx6 from "../components/UseStateEx6";
+import UseStateEx2 from "../components/UseState/UseStateEx2.jsx";
+import UseStateEx3 from "../components/UseState/UseStateEx3.jsx";
+import UseStateEx4 from "../components/UseState/UseStateEx4.jsx";
+import UseStateEx5 from "../components/UseState/UseStateEx5.jsx";
+import UseStateEx6 from "../components/UseState/UseStateEx6.jsx";
 function UseState() {
     const [count, setCount] = useState(0);
 

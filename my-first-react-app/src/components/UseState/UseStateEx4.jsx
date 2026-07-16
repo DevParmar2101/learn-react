@@ -1,5 +1,5 @@
 import {useState} from "react";
-import UserInfo from "../components/UserInfo";
+import UserInfo from "../UserInfo.jsx";
 function UseStateEx4(){
     const [isVisible, setIsVisible] = useState(true);
 
