@@ -1,8 +1,10 @@
 import {useEffect} from "react";
-import UseEffectEx1 from '../components/UseEffectEx1' ;
-import UseEffectEx2 from '../components/UseEffectEx2' ;
+import UseEffectEx1 from '../components/UseEffectEx1';
+import UseEffectEx2 from '../components/UseEffectEx2';
 import UseEffectEx3 from '../components/UseEffectEx3';
 import UseEffectEx4 from '../components/UseEffectEx4';
+import UseEffectEx5 from '../components/UseEffectEx5';
+
 function UseEffectPage() {
     useEffect(() => {
         console.log("Component mounted.");
@@ -33,6 +35,12 @@ function UseEffectPage() {
             <h2>Exercise 4 (Use an free api to see the fetch example in useEffect.(see the code to understand better))</h2>
             <div style={{ marginBottom: "10px", marginTop: "10px" }}>
                 <UseEffectEx4 />
+            </div>
+            <hr/>
+
+            <h2>Exercise 5 (Use an free api to see the fetch example in useEffect also added the loader.(see the code to understand better))</h2>
+            <div style={{ marginBottom: "10px", marginTop: "10px" }}>
+                <UseEffectEx5 />
             </div>
             <hr/>
 
