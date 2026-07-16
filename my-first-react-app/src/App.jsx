@@ -7,6 +7,7 @@ import Maps from "./pages/Maps";
 import Layout from "./components/Layout";
 import UseStateFormPage from "./pages/UseStateFormPage";
 import UseEffectPage from "./pages/UseEffectPage";
+import UseRef from "./pages/UseRef";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/use-state" element={ <UseState /> } />
                     <Route path="/use-state-form" element={ <UseStateFormPage /> } />
                     <Route path="/use-effect" element={ <UseEffectPage /> } />
+                    <Route path="/use-ref" element={ <UseRef /> } />
                 </Routes>
             </Layout>
         </div>

@@ -28,6 +28,9 @@ function Sidebar() {
                 <li>
                     <Link to="/use-effect">UseEffect Class</Link>
                 </li>
+                <li>
+                    <Link to="/use-ref">UseRef Class</Link>
+                </li>
             </ul>
         </aside>
     );
