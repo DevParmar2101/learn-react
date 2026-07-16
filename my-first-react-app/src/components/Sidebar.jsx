@@ -25,6 +25,9 @@ function Sidebar() {
                 <li>
                     <Link to="/use-state-form">UseState Form</Link>
                 </li>
+                <li>
+                    <Link to="/use-effect">UseEffect Class</Link>
+                </li>
             </ul>
         </aside>
     );

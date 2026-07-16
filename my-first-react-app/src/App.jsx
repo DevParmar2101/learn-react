@@ -6,6 +6,8 @@ import UseState from "./pages/UseState";
 import Maps from "./pages/Maps";
 import Layout from "./components/Layout";
 import UseStateFormPage from "./pages/UseStateFormPage";
+import UseEffectPage from "./pages/UseEffectPage";
+
 function App() {
     return (
         <div>
@@ -17,6 +19,7 @@ function App() {
                     <Route path="/map" element={ <Maps /> } />
                     <Route path="/use-state" element={ <UseState /> } />
                     <Route path="/use-state-form" element={ <UseStateFormPage /> } />
+                    <Route path="/use-effect" element={ <UseEffectPage /> } />
                 </Routes>
             </Layout>
         </div>
