@@ -6,7 +6,7 @@ function UseEffectEx2() {
     useEffect(() => {
         console.log("useEffect executed");
     },
-        // [] //if add this then it will only render the effect on page load and then stop and if we remove it then it render it everytime the component loads.
+        // [count] //if add this then it will only render the effect on page load and then stop and if we remove it then it render it everytime the component loads.
         );
 
     function increaseCount() {
