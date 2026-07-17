@@ -34,6 +34,9 @@ function Sidebar() {
                 <li>
                     <Link to="/use-memo">UseMemo Class</Link>
                 </li>
+                <li>
+                    <Link to="/use-callback">UseCallback Class</Link>
+                </li>
             </ul>
         </aside>
     );

@@ -9,6 +9,7 @@ import UseStateFormPage from "./pages/UseStateFormPage";
 import UseEffectPage from "./pages/UseEffectPage";
 import UseRef from "./pages/UseRef";
 import UseMemo from "./pages/UseMemo";
+import UseCallback from "./pages/UseCallback";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/use-effect" element={ <UseEffectPage /> } />
                     <Route path="/use-ref" element={ <UseRef /> } />
                     <Route path="/use-memo" element={ <UseMemo />} />
+                    <Route path="/use-callback" element={ <UseCallback />} />
                 </Routes>
             </Layout>
         </div>
