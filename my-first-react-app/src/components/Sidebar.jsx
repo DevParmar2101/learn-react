@@ -31,6 +31,9 @@ function Sidebar() {
                 <li>
                     <Link to="/use-ref">UseRef Class</Link>
                 </li>
+                <li>
+                    <Link to="/use-memo">UseMemo Class</Link>
+                </li>
             </ul>
         </aside>
     );
