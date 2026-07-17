@@ -1,5 +1,7 @@
 import UseMemoEx1 from "../components/UseMemo/UseMemoEx1";
 import UseMemoEx2 from "../components/UseMemo/UseMemoEx2";
+import UseMemoEx3 from "../components/UseMemo/UseMemoEx3";
+
 function UseMemo() {
     return (
         <div>
@@ -10,8 +12,12 @@ function UseMemo() {
             <UseMemoEx1 />
             <hr/>
 
-            <h2>Exercise 2 (Simulate an expensive calculation. Without useMemo the heavy calculation runs on every component re-render. With useMemo the calculated value is cached and recalculated only when the dependency changes)</h2>
+            <h2>Exercise 2 (Simulate an expensive calculation. Without useMemo the heavy calculation runs on every component re-render. With useMemo the calculated value is cached and recalculated only when the dependency changes.)</h2>
             <UseMemoEx2 />
+            <hr/>
+
+            <h2>Exercise 3 (Filter a list using useMemo. The employee list is filtered only when the search input changes. Changing other state values, like the counter, does not run the filtering again because the filtered result is cached.)</h2>
+            <UseMemoEx3 />
             <hr/>
 
         </div>
