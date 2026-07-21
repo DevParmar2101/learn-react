@@ -30,9 +30,18 @@ function Sidebar() {
                         <li className="sidebar-item">
                             <Link className="sidebar-link" aria-expanded="false" to="/datable">
                                 <span>
-                                    <i className="ti ti-aperture"></i>
+                                    <i className="ti ti-table"></i>
                                 </span>
                                 <span className="hide-menu">Datable</span>
+                            </Link>
+                        </li>
+
+                        <li className="sidebar-item">
+                            <Link className="sidebar-link" aria-expanded="false" to="/form">
+                                <span>
+                                    <i className="ti ti-forms"></i>
+                                </span>
+                                <span className="hide-menu">Forms</span>
                             </Link>
                         </li>
 
