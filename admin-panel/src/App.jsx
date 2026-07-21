@@ -1,8 +1,8 @@
-import MainLayout from "./layouts/MainLayout.jsx";
+import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
       <>
-        <MainLayout />
+        <AppRoutes />
       </>
   )
 }
