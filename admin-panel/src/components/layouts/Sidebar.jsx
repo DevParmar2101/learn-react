@@ -27,6 +27,15 @@ function Sidebar() {
                             </Link>
                         </li>
 
+                        <li className="sidebar-item">
+                            <Link className="sidebar-link" aria-expanded="false" to="/datable">
+                                <span>
+                                    <i className="ti ti-aperture"></i>
+                                </span>
+                                <span className="hide-menu">Datable</span>
+                            </Link>
+                        </li>
+
                     </ul>
                 </nav>
             </div>
