@@ -10,8 +10,9 @@ function MainLayout() {
             <Sidebar/>
             <div className="body-wrapper">
                 <Header />
-
-                <Outlet />
+                <div className="container-fluid">
+                    <Outlet />
+                </div>
             </div>
             <ShoppingCart />
         </>
