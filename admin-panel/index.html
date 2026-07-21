@@ -1,13 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>admin-panel</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>React Admin Panel</title>
+
+  <!--  Favicon -->
+  <link rel="shortcut icon" type="image/png" href="./src/assets/images/logos/favicon.png" />
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="./src/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+
+  <!-- Core Css -->
+  <link  id="themeColors"  rel="stylesheet" href="./src/assets/css/style.min.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader">
+  <img src="./src/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+</div>
+
+<!--  &lt;!&ndash; Preloader &ndash;&gt;-->
+<div class="preloader">
+  <img src="./src/assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+</div>
+
+<!--  Body Wrapper -->
+<div class="page-wrapper" id="main-wrapper" data-theme="blue_theme"  data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+
+  <!--  Main class to inject the html code so please don't change this starts -->
+  <div id="root"></div>
+  <!--  Main class to inject the html code so please don't change this ends-->
+
+</div>
+<!--  Customizer -->
+<!--  Import Js Files -->
+<script type="module" src="/src/main.jsx"></script>
+<script src="./src/assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="./src/assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="./src/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!--  core files -->
+<script src="./src/assets/js/app.min.js"></script>
+<script src="./src/assets/js/app.init.js"></script>
+<script src="./src/assets/js/app-style-switcher.js"></script>
+<script src="./src/assets/js/sidebarmenu.js"></script>
+<script src="./src/assets/js/custom.js"></script>
+<!--  current page js files -->
+<script src="./src/assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="./src/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="./src/assets/js/dashboard.js"></script>  </body>
 </html>
