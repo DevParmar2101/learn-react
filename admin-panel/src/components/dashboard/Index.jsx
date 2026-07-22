@@ -52,11 +52,62 @@ function Index() {
                     show: false,
                 },
                 type: "bar",
+                fontFamily: "Plus Jakarta Sans', sans-serif",
+                foreColor: "#adb0bb",
                 height: 320,
                 stacked: true,
             },
             colors: ["var(--bs-primary)", "var(--bs-secondary)"],
-            // ...rest of your options
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    barHeight: "60%",
+                    columnWidth: "20%",
+                    borderRadius: [6],
+                    borderRadiusApplication: "end",
+                    borderRadiusWhenStacked: "all",
+                },
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            legend: {
+                show: false,
+            },
+            grid: {
+                borderColor: "rgba(0,0,0,0.1)",
+                strokeDashArray: 3,
+                xaxis: {
+                    lines: {
+                        show: false,
+                    },
+                },
+            },
+            yaxis: {
+                min: -5,
+                max: 5,
+                tickAmount: 4,
+                title: {
+                    // text: "Age",
+                },
+            },
+            xaxis: {
+                axisBorder: {
+                    show: false,
+                },
+                categories: [
+                    "16/08",
+                    "17/08",
+                    "18/08",
+                    "19/08",
+                    "20/08",
+                    "21/08",
+                    "22/08",
+                ],
+            },
+            tooltip: {
+                theme: "dark",
+            }
         };
 
         const profitChart = new ApexCharts(
