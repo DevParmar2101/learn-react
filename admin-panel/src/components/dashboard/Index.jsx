@@ -5,9 +5,10 @@ import Graph from "./partial/Graph";
 function Index() {
     useEffect(() => {
 
+        //-------------------------------------
+        // owl Carousal
+        //-------------------------------------
         const carousel = $(".counter-carousel");
-
-        // Destroy existing carousel if it already exists
         if (carousel.hasClass("owl-loaded")) {
             carousel.trigger("destroy.owl.carousel");
             carousel.removeClass("owl-loaded");
@@ -32,11 +33,48 @@ function Index() {
             },
         });
 
+        //-------------------------------------
+        // owl Carousal
+        //-------------------------------------
+        const options = {
+            series: [
+                {
+                    name: "Earnings this month",
+                    data: [1.5, 2.7, 2.2, 3.6, 1.5, 1.0],
+                },
+                {
+                    name: "Expenses this month",
+                    data: [-1.8, -1.1, -2.5, -1.5, -0.6, -1.8],
+                }
+            ],
+            chart: {
+                toolbar: {
+                    show: false,
+                },
+                type: "bar",
+                height: 320,
+                stacked: true,
+            },
+            colors: ["var(--bs-primary)", "var(--bs-secondary)"],
+            // ...rest of your options
+        };
+
+        const profitChart = new ApexCharts(
+            document.querySelector("#chart"),
+        options
+    );
+
+        profitChart.render();
+
         return () => {
+            // Destroy carousel
             if (carousel.hasClass("owl-loaded")) {
                 carousel.trigger("destroy.owl.carousel");
             }
-        };
+
+            // Destroy chart
+            profitChart.destroy();
+        }
 
     }, []);
     return (
