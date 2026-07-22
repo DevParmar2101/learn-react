@@ -33,11 +33,11 @@ function Sidebar() {
                         </li>
 
                         <li className={location.pathname === "/datable" ? "sidebar-item selected" : "sidebar-item"}>
-                            <NavLink to="/datable" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link" }>
+                            <NavLink to="/datatable" className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link" }>
                                 <span>
                                     <i className="ti ti-table"></i>
                                 </span>
-                                <span className="hide-menu">Datable</span>
+                                <span className="hide-menu">Datatable</span>
                             </NavLink>
                         </li>
 
