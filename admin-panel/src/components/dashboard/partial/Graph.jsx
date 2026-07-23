@@ -2,7 +2,7 @@ function Graph() {
     return (
         <>
             <div className="row">
-                <div className="col-lg-6 d-flex align-items-strech">
+                <div className="col-lg-12 d-flex align-items-strech">
                     <div className="card w-100">
                         <div className="card-body">
                             <div className="d-sm-flex d-block align-items-center justify-content-between mb-9">
@@ -58,7 +58,7 @@ function Graph() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 d-flex align-items-strech">
+                <div className="col-lg-12 d-flex align-items-strech">
                     <div className="card w-100">
                         <div className="card-body">
                             <div className="d-sm-flex d-block align-items-center justify-content-between mb-7">
