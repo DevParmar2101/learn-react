@@ -2,7 +2,7 @@ function Graph() {
     return (
         <>
             <div className="row">
-                <div className="col-lg-8 d-flex align-items-strech">
+                <div className="col-lg-12 d-flex align-items-strech">
                     <div className="card w-100">
                         <div className="card-body">
                             <div className="d-sm-flex d-block align-items-center justify-content-between mb-9">
@@ -58,76 +58,6 @@ function Graph() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="row">
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <div className="card overflow-hidden">
-                                <div className="card-body">
-                                    <div className="row align-items-center">
-                                        <div className="col-8">
-                                            <h5 className="card-title mb-9 fw-semibold">Yearly Breakup</h5>
-                                            <h4 className="fw-semibold mb-3">$36,358</h4>
-                                            <div className="d-flex align-items-center mb-3">
-                            <span
-                                className="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                              <i className="ti ti-arrow-up-left text-success"></i>
-                            </span>
-                                                <p className="text-dark me-1 fs-3 mb-0">+9%</p>
-                                                <p className="fs-3 mb-0">last year</p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <div className="me-4">
-                                                    <span
-                                                        className="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                                                    <span className="fs-2">2023</span>
-                                                </div>
-                                                <div>
-                                                    <span
-                                                        className="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                                                    <span className="fs-2">2023</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-4">
-                                            <div className="d-flex justify-content-center">
-                                                <div id="breakup"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="row alig n-items-start">
-                                        <div className="col-8">
-                                            <h5 className="card-title mb-9 fw-semibold"> Monthly Earnings </h5>
-                                            <h4 className="fw-semibold mb-3">$6,820</h4>
-                                            <div className="d-flex align-items-center pb-1">
-                            <span
-                                className="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                              <i className="ti ti-arrow-down-right text-danger"></i>
-                            </span>
-                                                <p className="text-dark me-1 fs-3 mb-0">+9%</p>
-                                                <p className="fs-3 mb-0">last year</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-4">
-                                            <div className="d-flex justify-content-end">
-                                                <div
-                                                    className="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                                                    <i className="ti ti-currency-dollar fs-6"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="earning"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div className="row">
@@ -172,10 +102,9 @@ function Graph() {
                                     <p className="mb-1 fs-3">Customers</p>
                                     <h4 className="fw-semibold fs-7">36,358</h4>
                                     <div className="d-flex align-items-center mb-3">
-                        <span
-                            className="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                          <i className="ti ti-arrow-down-right text-danger"></i>
-                        </span>
+                                        <span className="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
+                                            <i className="ti ti-arrow-down-right text-danger"></i>
+                                        </span>
                                         <p className="text-dark fs-3 mb-0">+9%</p>
                                     </div>
                                 </div>
@@ -188,10 +117,9 @@ function Graph() {
                                     <p className="mb-1 fs-3">Projects</p>
                                     <h4 className="fw-semibold fs-7">78,298</h4>
                                     <div className="d-flex align-items-center mb-3">
-                        <span
-                            className="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                          <i className="ti ti-arrow-up-left text-success"></i>
-                        </span>
+                                        <span className="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
+                                            <i className="ti ti-arrow-up-left text-success"></i>
+                                        </span>
                                         <p className="text-dark fs-3 mb-0">+9%</p>
                                     </div>
                                     <div id="projects"></div>
@@ -215,83 +143,28 @@ function Graph() {
                                 <ul className="hstack mb-0">
                                     <li className="ms-n8">
                                         <a href="javascript:void(0)" className="me-1">
-                                            <img src="./src/assets/images/profile/user-2.jpg"
-                                                 className="rounded-circle border border-2 border-white" width="44"
-                                                 height="44" alt=""/>
+                                            <img src="./src/assets/images/profile/user-2.jpg" className="rounded-circle border border-2 border-white" width="44" height="44" alt=""/>
                                         </a>
                                     </li>
                                     <li className="ms-n8">
                                         <a href="javascript:void(0)" className="me-1">
-                                            <img src="./src/assets/images/profile/user-3.jpg"
-                                                 className="rounded-circle border border-2 border-white" width="44"
-                                                 height="44" alt=""/>
+                                            <img src="./src/assets/images/profile/user-3.jpg" className="rounded-circle border border-2 border-white" width="44" height="44" alt=""/>
                                         </a>
                                     </li>
                                     <li className="ms-n8">
                                         <a href="javascript:void(0)" className="me-1">
-                                            <img src="./src/assets/images/profile/user-4.jpg"
-                                                 className="rounded-circle border border-2 border-white" width="44"
-                                                 height="44" alt=""/>
+                                            <img src="./src/assets/images/profile/user-4.jpg" className="rounded-circle border border-2 border-white" width="44" height="44" alt=""/>
                                         </a>
                                     </li>
                                     <li className="ms-n8">
                                         <a href="javascript:void(0)" className="me-1">
-                                            <img src="./src/assets/images/profile/user-5.jpg"
-                                                 className="rounded-circle border border-2 border-white" width="44"
-                                                 height="44" alt=""/>
+                                            <img src="./src/assets/images/profile/user-5.jpg" className="rounded-circle border border-2 border-white" width="44" height="44" alt=""/>
                                         </a>
                                     </li>
                                 </ul>
                                 <a href="#" className="bg-light rounded py-1 px-8 d-flex align-items-center">
                                     <i className="ti ti-message-2 fs-6 text-primary"></i>
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 d-flex align-items-strech">
-                    <div className="card bg-primary border-0 w-100">
-                        <div className="card-body pb-0">
-                            <h5 className="fw-semibold mb-1 text-white card-title"> Best Selling Products </h5>
-                            <p className="fs-3 mb-3 text-white">Overview 2023</p>
-                            <div className="text-center mt-3">
-                                <img src="./src/assets/images/backgrounds/piggy.png" className="img-fluid" alt=""/>
-                            </div>
-                        </div>
-                        <div className="card mx-2 mb-2 mt-n2">
-                            <div className="card-body">
-                                <div className="mb-7 pb-1">
-                                    <div className="d-flex justify-content-between align-items-center mb-6">
-                                        <div>
-                                            <h6 className="mb-1 fs-4 fw-semibold">MaterialPro</h6>
-                                            <p className="fs-3 mb-0">$23,568</p>
-                                        </div>
-                                        <div>
-                                            <span
-                                                className="badge bg-light-primary text-primary fw-semibold fs-3">55%</span>
-                                        </div>
-                                    </div>
-                                    <div className="progress bg-light-primary" style={{ height: "4px" }}>
-                                        <div className="progress-bar w-50" role="progressbar" aria-valuenow="75"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="d-flex justify-content-between align-items-center mb-6">
-                                        <div>
-                                            <h6 className="mb-1 fs-4 fw-semibold">Flexy Admin</h6>
-                                            <p className="fs-3 mb-0">$23,568</p>
-                                        </div>
-                                        <div>
-                                            <span
-                                                className="badge bg-light-secondary text-secondary fw-bold fs-3">20%</span>
-                                        </div>
-                                    </div>
-                                    <div className="progress bg-light-secondary" style={{ height: "4px"}}>
-                                        <div className="progress-bar bg-secondary w-25" role="progressbar"
-                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -400,8 +273,7 @@ function Graph() {
                                             <p className="mb-0 fs-3">Elite Admin</p>
                                         </td>
                                         <td>
-                                            <span
-                                                className="badge fw-semibold py-1 w-85 bg-light-primary text-primary">Low</span>
+                                            <span className="badge fw-semibold py-1 w-85 bg-light-primary text-primary">Low</span>
                                         </td>
                                         <td>
                                             <p className="fs-3 text-dark mb-0">$3.9K</p>
@@ -411,8 +283,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-2.jpg"
-                                                         className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src="./src/assets/images/profile/user-2.jpg" className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">John Deo</h6>
@@ -424,8 +295,7 @@ function Graph() {
                                             <p className="mb-0 fs-3">Flexy Admin</p>
                                         </td>
                                         <td>
-                                            <span
-                                                className="badge fw-semibold py-1 w-85 bg-light-warning text-warning">Medium</span>
+                                            <span className="badge fw-semibold py-1 w-85 bg-light-warning text-warning">Medium</span>
                                         </td>
                                         <td>
                                             <p className="fs-3 text-dark mb-0">$24.5K</p>
@@ -435,8 +305,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-3.jpg"
-                                                         className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src="./src/assets/images/profile/user-3.jpg" className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Nirav Joshi</h6>
@@ -448,8 +317,7 @@ function Graph() {
                                             <p className="mb-0 fs-3">Material Pro</p>
                                         </td>
                                         <td>
-                                            <span
-                                                className="badge fw-semibold py-1 w-85 bg-light-info text-info">High</span>
+                                            <span className="badge fw-semibold py-1 w-85 bg-light-info text-info">High</span>
                                         </td>
                                         <td>
                                             <p className="fs-3 text-dark mb-0">$12.8K</p>
@@ -459,8 +327,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-4.jpg"
-                                                         className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src="./src/assets/images/profile/user-4.jpg" className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Yuvraj Sheth</h6>
@@ -472,8 +339,7 @@ function Graph() {
                                             <p className="mb-0 fs-3">Xtreme Admin</p>
                                         </td>
                                         <td>
-                                            <span
-                                                className="badge fw-semibold py-1 w-85 bg-light-success text-success">Low</span>
+                                            <span className="badge fw-semibold py-1 w-85 bg-light-success text-success">Low</span>
                                         </td>
                                         <td>
                                             <p className="fs-3 text-dark mb-0">$4.8K</p>
@@ -483,8 +349,7 @@ function Graph() {
                                         <td className="border-0 ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-5.jpg"
-                                                         className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src="./src/assets/images/profile/user-5.jpg" className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Micheal Doe</h6>
@@ -496,8 +361,7 @@ function Graph() {
                                             <p className="mb-0 fs-3">Helping Hands WP Theme</p>
                                         </td>
                                         <td className="border-0">
-                                            <span
-                                                className="badge fw-semibold py-1 w-85 bg-light-danger text-danger">High</span>
+                                            <span className="badge fw-semibold py-1 w-85 bg-light-danger text-danger">High</span>
                                         </td>
                                         <td className="border-0">
                                             <p className="fs-3 text-dark mb-0">$9.3K</p>
