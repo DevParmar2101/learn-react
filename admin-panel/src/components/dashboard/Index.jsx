@@ -34,7 +34,7 @@ function Index() {
         });
 
         //-------------------------------------
-        // owl Carousal
+        // Chart
         //-------------------------------------
         const options = {
             series: [
@@ -117,6 +117,64 @@ function Index() {
 
         profitChart.render();
 
+        //---------------------------------------
+        // Breakup
+        //---------------------------------------
+
+        const breakupChart = {
+            color: "#adb5bd",
+            series: [38, 40,25],
+            labels: ["2022", "2021", "2020"],
+            chart: {
+                width: 180,
+                type: "donut",
+                fontFamily: "Plus Jakarta Sans', sans-serif",
+                foreColor: "#adb0bb",
+            },
+            plotOptions: {
+                pie: {
+                    startAngle: 0,
+                    endAngle: 360,
+                    donut: {
+                        size: "75%"
+                    },
+                },
+            },
+            stroke: {
+                show: false,
+            },
+
+            dataLabels: {
+                enabled: false,
+            },
+
+            legend: {
+                show: false,
+            },
+            colors: ["var(--bs-primary)", "#ecf2ff", "#F9F9FD"],
+
+            responsive: [
+                {
+                    breakpoint: 991,
+                    options: {
+                        chart: {
+                            width: 120,
+                        }
+                    }
+                }
+            ],
+            tooltip: {
+                theme: "dark",
+                fillSeriesColor: false,
+            },
+        };
+
+        const breakup1 = new ApexCharts(
+            document.querySelector("#breakup"),
+            breakupChart
+        );
+        breakup1.render();
+
         return () => {
             // Destroy carousel
             if (carousel.hasClass("owl-loaded")) {
@@ -125,6 +183,9 @@ function Index() {
 
             // Destroy chart
             profitChart.destroy();
+
+            //Destroy Break Chart
+            breakup1.destroy();
         }
 
     }, []);
