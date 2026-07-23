@@ -90,8 +90,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-1.jpg"
-                                                         className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src="./src/assets/images/profile/user-1.jpg" className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Sunil Joshi</h6>
@@ -204,7 +203,6 @@ function Graph() {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }
