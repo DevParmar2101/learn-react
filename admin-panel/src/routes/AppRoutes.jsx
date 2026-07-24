@@ -7,6 +7,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import FormIndex from "../components/forms/Index";
 import Dashboard from "../components/dashboard/Index";
 import DatatableIndex from "../components/datatable/Index";
+import ForgotPassword from "../components/auth/ForgotPassword";
 
 function AppRoutes() {
     return (
@@ -23,6 +24,7 @@ function AppRoutes() {
             <Route element={<AuthLayout />}>
                 <Route path="/login" element={<Login />}/>
                 <Route path="/register" element={<Register />}/>
+                <Route path="/forgot-password" element={<ForgotPassword />}/>
             </Route>
 
         </Routes>

@@ -13,10 +13,10 @@ function RegisterForm() {
                 <label htmlFor="password" className="form-label">Password</label>
                 <input type="password" className="form-control" id="password"/>
             </div>
-            <a href="/register" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</a>
+            <a href="/register" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Register</a>
             <div className="d-flex align-items-center justify-content-center">
                 <p className="fs-4 mb-0 fw-medium">Already have an account?</p>
-                <a className="text-primary fw-medium ms-2" href="/login">Create an account</a>
+                <a className="text-primary fw-medium ms-2" href="/login">Login</a>
             </div>
         </form>
 
