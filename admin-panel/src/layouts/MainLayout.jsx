@@ -6,16 +6,16 @@ import ShoppingCart from "../components/layouts/ShoppingCart";
 function MainLayout() {
 
     return(
-        <>
-            <Sidebar/>
+        <div className="page-wrapper" id="main-wrapper" data-theme="blue_theme" data-layout="vertical"
+             data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed"><Sidebar/>
             <div className="body-wrapper">
-                <Header />
+                <Header/>
                 <div className="container-fluid">
-                    <Outlet />
+                    <Outlet/>
                 </div>
             </div>
-            <ShoppingCart />
-        </>
+            <ShoppingCart/>
+        </div>
     );
 }
 
