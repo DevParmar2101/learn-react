@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 function LoginForm() {
     return (
         <form>
@@ -16,12 +18,12 @@ function LoginForm() {
                         Remember this Device
                     </label>
                 </div>
-                <a className="text-primary fw-medium" href="./forgot-password">Forgot Password ?</a>
+                <NavLink className="text-primary fw-medium" to="/forgot-password">Forgot Password?</NavLink>
             </div>
-            <a href="/login" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</a>
+            <NavLink to="/login" className="btn btn-primary w-100 py-8 mb-4 rounded-4"> Sign In</NavLink>
             <div className="d-flex align-items-center justify-content-center">
                 <p className="fs-4 mb-0 fw-medium">New to Modernize?</p>
-                <a className="text-primary fw-medium ms-2" href="/register">Create an account</a>
+                <NavLink to="/register" className="text-primary fw-medium ms-2">Create an account</NavLink>
             </div>
         </form>
 
