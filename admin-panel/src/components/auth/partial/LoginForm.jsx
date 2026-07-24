@@ -18,10 +18,10 @@ function LoginForm() {
                 </div>
                 <a className="text-primary fw-medium" href="./authentication-forgot-password.html">Forgot Password ?</a>
             </div>
-            <a href="./index.html" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</a>
+            <a href="/login" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</a>
             <div className="d-flex align-items-center justify-content-center">
                 <p className="fs-4 mb-0 fw-medium">New to Modernize?</p>
-                <a className="text-primary fw-medium ms-2" href="./authentication-register.html">Create an account</a>
+                <a className="text-primary fw-medium ms-2" href="/register">Create an account</a>
             </div>
         </form>
 
