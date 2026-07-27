@@ -10,7 +10,7 @@ function ForgotPasswordForm() {
             <NavLink to="/forgot-password" className="btn btn-primary w-100 py-8 mb-4 rounded-2">Send</NavLink>
 
             <div className="d-flex align-items-center justify-content-center">
-                <p className="fs-4 mb-0 fw-medium">New to Modernize?</p>
+                <p className="fs-4 mb-0 fw-medium">New to React?</p>
                 <NavLink to="/register" className="text-primary fw-medium ms-2">Create an account</NavLink>
             </div>
         </form>

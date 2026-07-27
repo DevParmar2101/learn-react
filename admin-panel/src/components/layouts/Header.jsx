@@ -321,7 +321,7 @@ function Header() {
                                                 <h5 className="mb-1 fs-3">Mathew Anderson</h5>
                                                 <span className="mb-1 d-block text-dark">Designer</span>
                                                 <p className="mb-0 d-flex text-dark align-items-center gap-2">
-                                                    <i className="ti ti-mail fs-4"></i> info@modernize.com
+                                                    <i className="ti ti-mail fs-4"></i> info@react.com
                                                 </p>
                                             </div>
                                         </div>
