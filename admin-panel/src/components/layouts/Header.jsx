@@ -1,4 +1,20 @@
+import { logout } from "../../api/authApi";
+import {useNavigate} from "react-router-dom";
 function Header() {
+    const navigate = useNavigate();
+    const handleLogout = async () => {
+        try {
+            await logout();
+        }catch (error) {
+            console.error("Logout failed:", error);
+        }finally {
+            //Clear stored authentication data
+            localStorage.removeItem("token");
+            localStorage.removeItem("user");
+
+            navigate("/login");
+        }
+    }
     return (
         <header className="app-header">
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -16,7 +32,11 @@ function Header() {
                 </ul>
                 <ul className="navbar-nav quick-links d-none d-lg-flex">
                     <li className="nav-item dropdown hover-dd d-none d-lg-block">
-                        <a className="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">Apps<span className="mt-1"><i className="ti ti-chevron-down"></i></span></a>
+                        <a className="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">Apps
+                            <span className="mt-1">
+                                <i className="ti ti-chevron-down"></i>
+                            </span>
+                        </a>
                         <div className="dropdown-menu dropdown-menu-nav dropdown-menu-animate-up py-0">
                             <div className="row">
                                 <div className="col-8">
@@ -34,10 +54,8 @@ function Header() {
                                                                 <span className="fs-2 d-block text-dark">New messages arrived</span>
                                                             </div>
                                                         </a>
-                                                        <a href="./app-invoice.html"
-                                                           className="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
+                                                        <a href="./app-invoice.html" className="d-flex align-items-center pb-9 position-relative">
+                                                            <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
                                                                 <img src="./src/assets/images/svgs/icon-dd-invoice.svg" alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
@@ -46,10 +64,8 @@ function Header() {
                                                                 <span className="fs-2 d-block text-dark">Get latest invoice</span>
                                                             </div>
                                                         </a>
-                                                        <a href="./app-contact2.html"
-                                                           className="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
+                                                        <a href="./app-contact2.html" className="d-flex align-items-center pb-9 position-relative">
+                                                            <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
                                                                 <img src="./src/assets/images/svgs/icon-dd-mobile.svg" alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
@@ -58,10 +74,8 @@ function Header() {
                                                                 <span className="fs-2 d-block text-dark">2 Unsaved Contacts</span>
                                                             </div>
                                                         </a>
-                                                        <a href="./app-email.html"
-                                                           className="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
+                                                        <a href="./app-email.html" className="d-flex align-items-center pb-9 position-relative">
+                                                            <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
                                                                 <img src="./src/assets/images/svgs/icon-dd-message-box.svg" alt="" className="img-fluid" width="24" height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -74,8 +88,7 @@ function Header() {
                                                 <div className="col-6">
                                                     <div className="position-relative">
                                                         <a href="./page-user-profile.html" className="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
+                                                            <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
                                                                 <img src="./src/assets/images/svgs/icon-dd-cart.svg" alt="" className="img-fluid" width="24" height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -94,8 +107,7 @@ function Header() {
                                                             </div>
                                                         </a>
                                                         <a href="./app-contact.html" className="d-flex align-items-center pb-9 position-relative">
-                                                            <div
-                                                                className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
+                                                            <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
                                                                 <img src="./src/assets/images/svgs/icon-dd-lifebuoy.svg" alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
@@ -120,7 +132,10 @@ function Header() {
                                         </div>
                                         <div className="row align-items-center py-3">
                                             <div className="col-8">
-                                                <a className="fw-semibold text-dark d-flex align-items-center lh-1" href="#"><i className="ti ti-help fs-6 me-2"></i>Frequently Asked Questions</a>
+                                                <a className="fw-semibold text-dark d-flex align-items-center lh-1" href="#">
+                                                    <i className="ti ti-help fs-6 me-2"></i>
+                                                    Frequently Asked Questions
+                                                </a>
                                             </div>
                                             <div className="col-4">
                                                 <div className="d-flex justify-content-end pe-4">
@@ -176,9 +191,9 @@ function Header() {
                     <img src="./src/assets/images/logos/light-logo.svg" className="light-logo" width="180" alt=""/>
                 </div>
                 <button className="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="p-2">
-                <i className="ti ti-dots fs-7"></i>
-              </span>
+                    <span className="p-2">
+                        <i className="ti ti-dots fs-7"></i>
+                    </span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div className="d-flex align-items-center justify-content-between">
@@ -301,16 +316,14 @@ function Header() {
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link pe-0" href="javascript:void(0)" id="drop1"
-                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div className="d-flex align-items-center">
                                         <div className="user-profile-img">
                                             <img src="./src/assets/images/profile/user-1.jpg" className="rounded-circle" width="35" height="35" alt=""/>
                                         </div>
                                     </div>
                                 </a>
-                                <div className="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up"
-                                     aria-labelledby="drop1">
+                                <div className="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop1">
                                     <div className="profile-dropdown position-relative" data-simplebar>
                                         <div className="py-3 px-7 pb-0">
                                             <h5 className="mb-0 fs-5 fw-semibold">User Profile</h5>
@@ -325,54 +338,11 @@ function Header() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div className="message-body">
-                                            <a href="./page-user-profile.html" className="py-8 px-7 mt-8 d-flex align-items-center">
-                                                <span className="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
-                                                    <img src="./src/assets/images/svgs/icon-account.svg" alt="" width="24" height="24"/>
-                                                </span>
-                                                <div className="w-75 d-inline-block v-middle ps-3">
-                                                    <h6 className="mb-1 bg-hover-primary fw-semibold"> My Profile </h6>
-                                                    <span className="d-block text-dark">Account Settings</span>
-                                                </div>
-                                            </a>
-                                            <a href="./app-email.html" className="py-8 px-7 d-flex align-items-center">
-                                                <span className="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
-                                                    <img src="./src/assets/images/svgs/icon-inbox.svg" alt="" width="24" height="24"/>
-                                                </span>
-                                                <div className="w-75 d-inline-block v-middle ps-3">
-                                                    <h6 className="mb-1 bg-hover-primary fw-semibold">My Inbox</h6>
-                                                    <span className="d-block text-dark">Messages & Emails</span>
-                                                </div>
-                                            </a>
-                                            <a href="./app-notes.html" className="py-8 px-7 d-flex align-items-center">
-                                                <span className="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
-                                                    <img src="./src/assets/images/svgs/icon-tasks.svg" alt="" width="24" height="24"/>
-                                                </span>
-                                                <div className="w-75 d-inline-block v-middle ps-3">
-                                                    <h6 className="mb-1 bg-hover-primary fw-semibold">My Task</h6>
-                                                    <span className="d-block text-dark">To-do and Daily Tasks</span>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <div className="message-body"></div>
                                         <div className="d-grid py-4 px-7 pt-8">
-                                            <div
-                                                className="upgrade-plan bg-light-primary position-relative overflow-hidden rounded-4 p-4 mb-9">
-                                                <div className="row">
-                                                    <div className="col-6">
-                                                        <h5 className="fs-4 mb-3 w-50 fw-semibold text-dark">Unlimited
-                                                            Access</h5>
-                                                        <button className="btn btn-primary text-white">Upgrade</button>
-                                                    </div>
-                                                    <div className="col-6">
-                                                        <div className="m-n4">
-                                                            <img src="./src/assets/images/backgrounds/unlimited-bg.png"
-                                                                 alt="" className="w-100"/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="./authentication-login.html" className="btn btn-outline-primary">Log
-                                                Out</a>
+                                            <button className="btn btn-outline-primary" type="button" onClick={handleLogout}>
+                                                Logout
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
