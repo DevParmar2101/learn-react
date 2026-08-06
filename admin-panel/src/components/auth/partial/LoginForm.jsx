@@ -44,12 +44,12 @@ function LoginForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="mb-3">
+            <div className="mb-2">
                 <label htmlFor="email" className="form-label">Email</label>
                 <input type="text" name="email" className={errors.email ? "form-control is-invalid" : "form-control"} id="email" value={formData.email} onChange={handleChange}/>
                 {errors.email && (<div className="invalid-feedback">{errors.email[0]}</div>)}
             </div>
-            <div className="mb-4">
+            <div className="mb-2">
                 <label htmlFor="password" className="form-label">Password</label>
                 <input type="password" name="password" className={errors.password ? "form-control is-invalid" : "form-control"} id="password" value={formData.password} onChange={handleChange}/>
                 {errors.password && (<div className="invalid-feedback">{errors.password[0]}</div>)}
