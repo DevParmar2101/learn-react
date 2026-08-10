@@ -8,6 +8,7 @@ import FormIndex from "../components/forms/Index";
 import Dashboard from "../components/dashboard/Index";
 import DatatableIndex from "../components/datatable/Index";
 import ForgotPassword from "../components/auth/ForgotPassword";
+import UserIndex from "../components/users/Index";
 
 function AppRoutes() {
     return (
@@ -18,6 +19,7 @@ function AppRoutes() {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/datatable" element={<DatatableIndex />} />
                 <Route path="/form" element={<FormIndex />} />
+                <Route path="/users/index" element={<UserIndex />} />
             </Route>
 
             {/*  AuthLayout link  */}
