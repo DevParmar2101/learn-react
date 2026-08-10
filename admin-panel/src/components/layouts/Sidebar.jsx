@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import darkLogo from "/src/assets/images/logos/dark-logo.svg";
 
 function Sidebar() {
     const location = useLocation();
@@ -8,7 +9,7 @@ function Sidebar() {
             <div>
                 <div className="brand-logo d-flex align-items-center justify-content-between">
                     <NavLink className="text-nowrap logo-img" to="/">
-                        <img src="./src/assets/images/logos/dark-logo.svg" className="dark-logo" width="180" alt="" />
+                        <img src={darkLogo} className="dark-logo" width="180" alt="" />
                     </NavLink>
 
                     <div className="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -29,6 +30,15 @@ function Sidebar() {
                                     <i className="ti ti-aperture"></i>
                                 </span>
                                 <span className="hide-menu">Dashboard</span>
+                            </NavLink>
+                        </li>
+
+                        <li className={location.pathname === "/users/index" ? "sidebar-item selected" : "sidebar-item"}>
+                            <NavLink to="/users/index" end className={({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link" }>
+                                <span>
+                                    <i className="ti ti-users"></i>
+                                </span>
+                                <span className="hide-menu">Users</span>
                             </NavLink>
                         </li>
 

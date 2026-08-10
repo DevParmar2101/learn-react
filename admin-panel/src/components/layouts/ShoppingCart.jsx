@@ -1,3 +1,7 @@
+import product1 from "/src/assets/images/products/product-1.jpg";
+import product2 from "/src/assets/images/products/product-2.jpg";
+import product3 from "/src/assets/images/products/product-3.jpg";
+
 function ShoppingCart() {
     return (
         <div className="offcanvas offcanvas-end shopping-cart" tabIndex="-1" id="offcanvasRight"
@@ -10,7 +14,7 @@ function ShoppingCart() {
                 <ul className="mb-0">
                     <li className="pb-7">
                         <div className="d-flex align-items-center">
-                            <img src="./src/assets/images/products/product-1.jpg" width="95" height="75"
+                            <img src={product1} width="95" height="75"
                                  className="rounded-1 me-9 flex-shrink-0" alt=""/>
                             <div>
                                 <h6 className="mb-1">Supreme toys cooker</h6>
@@ -36,7 +40,7 @@ function ShoppingCart() {
                     </li>
                     <li className="pb-7">
                         <div className="d-flex align-items-center">
-                            <img src="./src/assets/images/products/product-2.jpg" width="95" height="75"
+                            <img src={product2} width="95" height="75"
                                  className="rounded-1 me-9 flex-shrink-0" alt=""/>
                             <div>
                                 <h6 className="mb-1">Supreme toys cooker</h6>
@@ -62,7 +66,7 @@ function ShoppingCart() {
                     </li>
                     <li className="pb-7">
                         <div className="d-flex align-items-center">
-                            <img src="./src/assets/images/products/product-3.jpg" width="95" height="75"
+                            <img src={product3} width="95" height="75"
                                  className="rounded-1 me-9 flex-shrink-0" alt=""/>
                             <div>
                                 <h6 className="mb-1">Supreme toys cooker</h6>

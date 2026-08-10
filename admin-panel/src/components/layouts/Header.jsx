@@ -1,5 +1,25 @@
 import { logout } from "../../api/authApi";
 import {useNavigate} from "react-router-dom";
+import iconDdChat from "/src/assets/images/svgs/icon-dd-chat.svg";
+import iconDdInvoice from "/src/assets/images/svgs/icon-dd-invoice.svg";
+import iconDdMobile from "/src/assets/images/svgs/icon-dd-mobile.svg";
+import iconDdMessageBox from "/src/assets/images/svgs/icon-dd-message-box.svg";
+import iconDdCart from "/src/assets/images/svgs/icon-dd-cart.svg";
+import iconDdDate from "/src/assets/images/svgs/icon-dd-date.svg";
+import iconDdLifeBuoy from "/src/assets/images/svgs/icon-dd-lifebuoy.svg";
+import iconDdApplication from "/src/assets/images/svgs/icon-dd-application.svg";
+import darkLogo from "/src/assets/images/logos/dark-logo.svg";
+import lightLogo from "/src/assets/images/logos/light-logo.svg";
+import iconFlagEn from "/src/assets/images/svgs/icon-flag-en.svg";
+import iconFlagCn from "/src/assets/images/svgs/icon-flag-cn.svg";
+import iconFlagFr from "/src/assets/images/svgs/icon-flag-fr.svg";
+import iconFlagSa from "/src/assets/images/svgs/icon-flag-sa.svg";
+import user1 from "/src/assets/images/profile/user-1.jpg";
+import user2 from "/src/assets/images/profile/user-2.jpg";
+import user3 from "/src/assets/images/profile/user-3.jpg";
+import user4 from "/src/assets/images/profile/user-4.jpg";
+import user5 from "/src/assets/images/profile/user-5.jpg";
+
 function Header() {
     const navigate = useNavigate();
     const handleLogout = async () => {
@@ -47,7 +67,7 @@ function Header() {
                                                     <div className="position-relative">
                                                         <a href="./app-chat.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-chat.svg" alt="" className="img-fluid" width="24" height="24"/>
+                                                                <img src={iconDdChat} alt="" className="img-fluid" width="24" height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
                                                                 <h6 className="mb-1 fw-semibold bg-hover-primary">Chat Application</h6>
@@ -56,7 +76,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-invoice.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-invoice.svg" alt="" className="img-fluid" width="24"
+                                                                <img src={iconDdInvoice} alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -66,7 +86,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-contact2.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-mobile.svg" alt="" className="img-fluid" width="24"
+                                                                <img src={iconDdMobile} alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -76,7 +96,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-email.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-message-box.svg" alt="" className="img-fluid" width="24" height="24"/>
+                                                                <img src={iconDdMessageBox} alt="" className="img-fluid" width="24" height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
                                                                 <h6 className="mb-1 fw-semibold bg-hover-primary">Email App</h6>
@@ -89,7 +109,7 @@ function Header() {
                                                     <div className="position-relative">
                                                         <a href="./page-user-profile.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-cart.svg" alt="" className="img-fluid" width="24" height="24"/>
+                                                                <img src={iconDdCart} alt="" className="img-fluid" width="24" height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
                                                                 <h6 className="mb-1 fw-semibold bg-hover-primary">User Profile</h6>
@@ -98,7 +118,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-calendar.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-date.svg" alt="" className="img-fluid" width="24"
+                                                                <img src={iconDdDate} alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -108,7 +128,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-contact.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-lifebuoy.svg" alt="" className="img-fluid" width="24"
+                                                                <img src={iconDdLifeBuoy} alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -118,7 +138,7 @@ function Header() {
                                                         </a>
                                                         <a href="./app-notes.html" className="d-flex align-items-center pb-9 position-relative">
                                                             <div className="bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                <img src="./src/assets/images/svgs/icon-dd-application.svg" alt="" className="img-fluid" width="24"
+                                                                <img src={iconDdApplication} alt="" className="img-fluid" width="24"
                                                                      height="24"/>
                                                             </div>
                                                             <div className="d-inline-block">
@@ -187,8 +207,8 @@ function Header() {
                     </li>
                 </ul>
                 <div className="d-block d-lg-none">
-                    <img src="./src/assets/images/logos/dark-logo.svg" className="dark-logo" width="180" alt=""/>
-                    <img src="./src/assets/images/logos/light-logo.svg" className="light-logo" width="180" alt=""/>
+                    <img src={darkLogo} className="dark-logo" width="180" alt=""/>
+                    <img src={lightLogo} className="light-logo" width="180" alt=""/>
                 </div>
                 <button className="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="p-2">
@@ -203,33 +223,33 @@ function Header() {
                         <ul className="navbar-nav flex-row ms-auto align-items-center justify-content-center">
                             <li className="nav-item dropdown">
                                 <a className="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./src/assets/images/svgs/icon-flag-en.svg" alt="" className="rounded-circle object-fit-cover round-20"/>
+                                    <img src={iconFlagEn} alt="" className="rounded-circle object-fit-cover round-20"/>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                                     <div className="message-body" data-simplebar>
                                         <a href="javascript:void(0)" className="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                             <div className="position-relative">
-                                                <img src="./src/assets/images/svgs/icon-flag-en.svg" alt="" className="rounded-circle object-fit-cover round-20"/>
+                                                <img src={iconFlagEn} alt="" className="rounded-circle object-fit-cover round-20"/>
                                             </div>
                                             <p className="mb-0 fs-3">English (UK)</p>
                                         </a>
                                         <a href="javascript:void(0)" className="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                             <div className="position-relative">
-                                                <img src="./src/assets/images/svgs/icon-flag-cn.svg" alt="" className="rounded-circle object-fit-cover round-20"/>
+                                                <img src={iconFlagCn} alt="" className="rounded-circle object-fit-cover round-20"/>
                                             </div>
                                             <p className="mb-0 fs-3">中国人 (Chinese)</p>
                                         </a>
                                         <a href="javascript:void(0)"
                                            className="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                             <div className="position-relative">
-                                                <img src="./src/assets/images/svgs/icon-flag-fr.svg" alt="" className="rounded-circle object-fit-cover round-20"/>
+                                                <img src={iconFlagFr} alt="" className="rounded-circle object-fit-cover round-20"/>
                                             </div>
                                             <p className="mb-0 fs-3">français (French)</p>
                                         </a>
                                         <a href="javascript:void(0)"
                                            className="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
                                             <div className="position-relative">
-                                                <img src="./src/assets/images/svgs/icon-flag-sa.svg" alt="" className="rounded-circle object-fit-cover round-20"/>
+                                                <img src={iconFlagSa} alt="" className="rounded-circle object-fit-cover round-20"/>
                                             </div>
                                             <p className="mb-0 fs-3">عربي (Arabic)</p>
                                         </a>
@@ -255,7 +275,7 @@ function Header() {
                                     <div className="message-body" data-simplebar>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-1.jpg" alt="user" className="rounded-circle" width="48" height="48"/>
+                                                <img src={user1} alt="user" className="rounded-circle" width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
                                                 <h6 className="mb-1 fw-semibold">Roman Joined the Team!</h6>
@@ -264,7 +284,7 @@ function Header() {
                                         </a>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-2.jpg" alt="user" className="rounded-circle"
+                                                <img src={user2} alt="user" className="rounded-circle"
                                                      width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
@@ -274,7 +294,7 @@ function Header() {
                                         </a>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-3.jpg" alt="user" className="rounded-circle" width="48" height="48"/>
+                                                <img src={user3} alt="user" className="rounded-circle" width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
                                                 <h6 className="mb-1 fw-semibold">Bianca sent payment</h6>
@@ -283,7 +303,7 @@ function Header() {
                                         </a>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-4.jpg" alt="user" className="rounded-circle" width="48" height="48"/>
+                                                <img src={user4} alt="user" className="rounded-circle" width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
                                                 <h6 className="mb-1 fw-semibold">Jolly completed tasks</h6>
@@ -292,7 +312,7 @@ function Header() {
                                         </a>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-5.jpg" alt="user" className="rounded-circle" width="48" height="48"/>
+                                                <img src={user5} alt="user" className="rounded-circle" width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
                                                 <h6 className="mb-1 fw-semibold">John received payment</h6>
@@ -301,7 +321,7 @@ function Header() {
                                         </a>
                                         <a href="javascript:void(0)" className="py-6 px-7 d-flex align-items-center dropdown-item">
                                             <span className="me-3">
-                                                <img src="./src/assets/images/profile/user-1.jpg" alt="user" className="rounded-circle" width="48" height="48"/>
+                                                <img src={user1} alt="user" className="rounded-circle" width="48" height="48"/>
                                             </span>
                                             <div className="w-75 d-inline-block v-middle">
                                                 <h6 className="mb-1 fw-semibold">Roman Joined the Team!</h6>
@@ -319,7 +339,7 @@ function Header() {
                                 <a className="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div className="d-flex align-items-center">
                                         <div className="user-profile-img">
-                                            <img src="./src/assets/images/profile/user-1.jpg" className="rounded-circle" width="35" height="35" alt=""/>
+                                            <img src={user1} className="rounded-circle" width="35" height="35" alt=""/>
                                         </div>
                                     </div>
                                 </a>
@@ -329,7 +349,7 @@ function Header() {
                                             <h5 className="mb-0 fs-5 fw-semibold">User Profile</h5>
                                         </div>
                                         <div className="d-flex align-items-center py-9 mx-7 border-bottom">
-                                            <img src="./src/assets/images/profile/user-1.jpg" className="rounded-circle" width="80" height="80" alt=""/>
+                                            <img src={user1} className="rounded-circle" width="80" height="80" alt=""/>
                                             <div className="ms-3">
                                                 <h5 className="mb-1 fs-3">Mathew Anderson</h5>
                                                 <span className="mb-1 d-block text-dark">Designer</span>
