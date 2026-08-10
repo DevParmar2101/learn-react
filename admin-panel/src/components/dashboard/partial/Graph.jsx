@@ -1,3 +1,9 @@
+import user1 from "/src/assets/images/profile/user-1.jpg";
+import user2 from "/src/assets/images/profile/user-2.jpg";
+import user3 from "/src/assets/images/profile/user-3.jpg";
+import user4 from "/src/assets/images/profile/user-4.jpg";
+import user5 from "/src/assets/images/profile/user-5.jpg";
+
 function Graph() {
     return (
         <>
@@ -90,7 +96,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-1.jpg" className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src={user1} className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Sunil Joshi</h6>
@@ -112,7 +118,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-2.jpg" className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src={user2} className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">John Deo</h6>
@@ -134,7 +140,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-3.jpg" className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src={user3} className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Nirav Joshi</h6>
@@ -156,7 +162,7 @@ function Graph() {
                                         <td className="ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-4.jpg" className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src={user4} className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Yuvraj Sheth</h6>
@@ -178,7 +184,7 @@ function Graph() {
                                         <td className="border-0 ps-0">
                                             <div className="d-flex align-items-center">
                                                 <div className="me-2 pe-1">
-                                                    <img src="./src/assets/images/profile/user-5.jpg" className="rounded-circle" width="40" height="40" alt=""/>
+                                                    <img src={user5} className="rounded-circle" width="40" height="40" alt=""/>
                                                 </div>
                                                 <div>
                                                     <h6 className="fw-semibold mb-1">Micheal Doe</h6>
