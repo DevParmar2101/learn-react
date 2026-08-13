@@ -44,6 +44,7 @@ function UserIndex() {
                             <th>#</th>
                             <th>Name</th>
                             <th>Email</th>
+                            <th>Phone Number</th>
                             <th>Status</th>
                         </tr>
                         </thead>
@@ -75,6 +76,7 @@ function UserIndex() {
                                     index + 1 : index + 1}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
+                                <td>{user.phone}</td>
                                 <td>{user.status ? "Active" : "Inactive"}</td>
                             </tr>
                         ))}

@@ -59,6 +59,7 @@ function Sidebar() {
                                 <span className="hide-menu">Forms</span>
                             </NavLink>
                         </li>
+
                     </ul>
                 </nav>
             </div>
